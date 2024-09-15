@@ -1,2 +1,122 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1500px) {
+  .modal-content {
+    padding: 24px;
+  }
+  .modal-content .btn-close {
+    top: 44px;
+    right: 24px;
+  }
+  .table-appartments {
+    font-size: 16px;
+  }
+  .table-appartments th sup, .table-appartments td sup {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .filter-column {
+    max-width: none;
+    margin: 20px 0 0;
+  }
+  #modal2 .modal-content {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 30px;
+  }
+  .modal-content .btn-close {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    top: 35px;
+  }
+  .modal-header {
+    margin: 0 0 20px;
+  }
+  .apartment-information {
+    margin: 40px 0 0;
+    max-width: none;
+  }
+  .btn-catalog-apartment {
+    margin: 0 0 30px;
+  }
+  .apartment-photo {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+  }
+  .table-appartments {
+    font-size: 14px;
+  }
+  .table-appartments th {
+    padding: 8px 12px;
+  }
+  .table-appartments tr {
+    padding: 6px 10px;
+  }
+  .table-appartments th sup, .table-appartments td sup {
+    font-size: 10px;
+  }
+  .filter-column-item {
+    margin: 30px 0 0;
+  }
+  .mb-40 {
+    margin-bottom: 20px;
+  }
+  .nav-tabs {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .nav-tabs .nav-link {
+    padding: 6px 10px;
+  }
+  .btn-catalog-apartment {
+    font-size: 16px;
+  }
+  .btn-catalog-apartment svg {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    padding: 5px;
+  }
+  .apartment-photo {
+    height: auto;
+  }
+  .apartment-photo::before {
+    height: 30px;
+    width: 30px;
+  }
+  .apartment-information .modal-title {
+    font-size: 24px;
+  }
+  .apartment-information .subtitle {
+    font-size: 16px;
+    margin: 4px 0 20px;
+  }
+  .list-charasteristics-apartment {
+    font-size: 16px;
+  }
+  .list-charasteristics-apartment sup {
+    font-size: 12px;
+  }
+  .apartment-price {
+    font-size: 16px;
+  }
+  .apartment-price .price {
+    font-size: 30px;
+  }
+  #modal2 .modal-content {
+    padding: 20px;
+  }
+  .btn-lg {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}

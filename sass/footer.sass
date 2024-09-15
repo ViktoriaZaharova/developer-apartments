@@ -1,14 +1,16 @@
 @import "vars"
 
-
 // modal
 .modal-dialog
   max-width: 1460px
+  .modal-body
+    overflow-x: hidden
 
 .modal-content
   border: 1px solid #D2D9DB
   border-radius: 0
   padding: 64px
+  background: $gray
   .btn-close
     margin: 0
     padding: 10px
@@ -25,11 +27,11 @@
     border-radius: 0
     fill: $dark
     background: transparent
+    z-index: 2
     &:hover, &:focus, &:active
       fill: $dark
       background: $light-sand
       border-color: $light-sand
-
 
 .modal-header
   width: 100%
@@ -44,8 +46,223 @@
   border: none
   border-radius: 0
 
-
-
 .modal-title
   text-transform: uppercase
+  padding: 0 52px 0 0
+
+.table-appartments
+  font-size: 20px
+  width: 100%
+  td, th
+    vertical-align: middle
+    padding: 7px 18.5px
+    border: 1px solid #D2D9DB
+    font-weight: 300
+    sup
+      font-size: 14px
+  th
+    text-align: center
+    padding: 12px 16px
+    color: #fff
+    background: $dark
+    font-weight: 600
+
+.btn-add-favorite
+  @include d-flex
+  width: 24px
+  height: 22px
+  min-width: 24px
+  fill: $dark
+  &:hover, &:focus, &:active
+    fill: $light-sand
+
+.btn-clear-filter
+  width: 100%
+  svg
+    width: 18px
+    height: 18px
+    min-width: 18px
+    margin-left: 4px
+    fill: $dark
+
+.filter-column
+  width: 100%
+  max-width: 366px
+  margin-left: auto
+
+.list-checkbox
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    margin: 0 10px 10px 0
+    flex: auto
+    &:last-child
+      margin: 0
+
+.filter-column-item
+  margin: 40px 0 0
+  h4
+    width: 100%
+    margin: 0 0 10px
+    font-size: 20px
+
+.polzunok-container
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.polzunok-input
+  width: calc(50% - 12px)
+  margin: 0 0 0 auto
+  &:first-child
+    margin: 0
+
+.polzunok
+  width: 100%
+  margin: 9px 0 0
+  height: 4px
+  border: none
+  border-radius: 7px
+  &.ui-widget-content
+    border: none
+  .ui-widget-header
+    background: $dark
+    border: none
+    border-radius: 0
+  .ui-slider-handle
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    width: 14px
+    height: 14px
+    background: $dark
+
+#modal2
+  .modal-content
+    padding: 80px
+  .btn-close
+    top: 16px
+    right: 16px
+
+.btn-catalog-apartment
+  height: auto
+  margin: 0 0 40px
+  padding: 8px 10px 8px 0
+  justify-content: flex-start
+  text-transform: none
+  font-size: 20px
+  text-align: left
+  color: $dark
+  line-height: 24px
+  border-color: #D2D9DB
+  width: 100%
+  span
+    text-decoration: underline
+    max-width: 300px
+  svg
+    padding: 10px
+    fill: $dark
+    width: 52px
+    height: 52px
+    min-width: 52px
+    margin: 0 8px 0 0
+
+.apartment-photo
+  width: 100%
+  height: 540px
+  @include d-flex
+  position: relative
+  z-index: 1
+  padding: 20px
+  background: #fff
+  border: 1px solid $gray-light
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    right: 0
+    top: 0
+    width: 121px
+    height: 115px
+    background: url('../img/orientation-img.png') no-repeat center
+    background-size: 100%
+  img
+    max-height: 100%
+
+
+
+.apartment-information
+  max-width: 478px
+  width: 100%
+  .modal-title
+    font-size: 32px
+    padding: 0
+  .subtitle
+    font-size: 20px
+    margin: 4px 0 28px
+    sup
+      font-size: 14px    
+
+.list-tags-apartment
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 20px
+  li
+    margin: 0 8px 8px 0  
+    &:last-child
+      margin: 0 0 8px
+
+.list-charasteristics-apartment
+  width: 100%
+  font-size: 20px
+  li
+    width: 100%
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: start
+    margin: 0 0 12px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      width: 100%
+      height: 1px
+      background: rgba(#000, .4)
+      top: 12px
+    &:last-child
+      margin: 0
+    sup
+      font-size: 14px  
+    span
+      margin-left: auto
+      position: relative
+      z-index: 1
+      padding-left: 8px
+      background: $gray
+    p
+      padding-right: 8px
+      position: relative
+      z-index: 1
+      background: $gray
+
+
+
+
+.apartment-price
+  width: 100%
+  font-size: 20px
+  .price
+    margin: 8px 0
+    font-size: 40px
+    line-height: 1
+  span, .price-credit
+    color: rgba(#000, .4)
+  span
+    font-size: 14px  
 

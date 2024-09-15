@@ -13,6 +13,7 @@
   <!-- add plugins css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
   <!-- add plugins css end -->
 
   <link rel="stylesheet" href="css/style.css">
@@ -97,7 +98,7 @@
         <div class="modal-body">
           <form method="post" class="form-appartments">
             <div class="row">
-              <div class="col-12 col-md-8">
+              <div class="col-12 col-xl-8">
                 <div class="table-responsive">
                   <table class="table-appartments">
                     <thead>
@@ -117,12 +118,230 @@
                         <td>12</td>
                         <td>211</td>
                         <td>1-комнатная</td>
-                        <td></td>
+                        <td>
+                          45 м<sup>2</sup>
+                        </td>
                         <td>
                           <a href="#" class="btn-add-favorite"><svg class="svg-icon">
                               <use xlink:href="img/sprite.svg#star"></use>
                             </svg></a>
-                          </td>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Первая</td>
+                        <td>3</td>
+                        <td>314</td>
+                        <td>2-комнатная</td>
+                        <td>
+                          80 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Вторая</td>
+                        <td>5</td>
+                        <td>64</td>
+                        <td>3-комнатная</td>
+                        <td>
+                          95 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Вторая</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>Студия</td>
+                        <td>
+                          28 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Третья</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>1-комнатная</td>
+                        <td>
+                          32 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Третья</td>
+                        <td>4</td>
+                        <td>78</td>
+                        <td>2-комнатная</td>
+                        <td>
+                          47 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Первая</td>
+                        <td>12</td>
+                        <td>211</td>
+                        <td>1-комнатная</td>
+                        <td>
+                          45 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Первая</td>
+                        <td>3</td>
+                        <td>314</td>
+                        <td>2-комнатная</td>
+                        <td>
+                          80 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Вторая</td>
+                        <td>5</td>
+                        <td>64</td>
+                        <td>3-комнатная</td>
+                        <td>
+                          95 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Вторая</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>Студия</td>
+                        <td>
+                          28 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Третья</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>1-комнатная</td>
+                        <td>
+                          32 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Третья</td>
+                        <td>4</td>
+                        <td>78</td>
+                        <td>2-комнатная</td>
+                        <td>
+                          47 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-accent" data-bs-toggle="modal"
+                            data-bs-target="#modal2">показать</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Первая</td>
+                        <td>12</td>
+                        <td>211</td>
+                        <td>1-комнатная</td>
+                        <td>
+                          45 м<sup>2</sup>
+                        </td>
+                        <td>
+                          <a href="#" class="btn-add-favorite"><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg></a>
+                        </td>
                         <td>
                           <a href="#" class="btn btn-accent" data-bs-toggle="modal"
                             data-bs-target="#modal2">показать</a>
@@ -132,7 +351,114 @@
                   </table>
                 </div>
               </div>
-              <div class="col-12 col-md-4"></div>
+              <div class="col-12 col-xl-4">
+                <div class="filter-column">
+                  <a href="#" class="btn btn-md btn-white btn-clear-filter">
+                    <span>Сброить все фильтры</span>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#close-icon"></use>
+                    </svg>
+                  </a>
+
+                  <div class="filter-column-item">
+                    <div class="row">
+                      <div class="col-12 col-md-5 mb-20">
+                        <h4>Башня</h4>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox1">
+                          <span class="label-checkbox__custom"></span>
+                          <span class="label-checkbox__text">Первая</span>
+                        </label>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox1" checked>
+                          <span class="label-checkbox__custom"></span>
+                          <span class="label-checkbox__text">Вторая</span>
+                        </label>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox1">
+                          <span class="label-checkbox__custom"></span>
+                          <span class="label-checkbox__text">Третья</span>
+                        </label>
+                      </div>
+                      <div class="col-12 col-md-7">
+                        <h4>Комнатность</h4>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox2">
+                          <span class="label-checkbox__custom"></span>
+                          <span class="label-checkbox__text">Студия</span>
+                        </label>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox2" checked>
+                          <span class="label-checkbox__custom"></span>
+                          <span class="label-checkbox__text">1-комнатная</span>
+                        </label>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox1" checked>
+                          <span class="label-checkbox__custom"></span>
+                          <span class="label-checkbox__text">2-комнатная</span>
+                        </label>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox2">
+                          <span class="label-checkbox__custom"></span>
+                          <span class="label-checkbox__text">3-комнатная</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-column-item">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Площадь</h4>
+                        <div class="polzunok-container">
+                          <input type="text" class="polzunok-input polzunok-input-1-left" />
+                          <input type="text" class="polzunok-input polzunok-input-1-right " />
+                          <div class="polzunok polzunok-1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-column-item">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Этаж</h4>
+                        <div class="polzunok-container">
+                          <input type="text" class="polzunok-input polzunok-input-2-left" />
+                          <input type="text" class="polzunok-input polzunok-input-2-right " />
+                          <div class="polzunok polzunok-2"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-column-item">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Вид из окон</h4>
+                        <ul class="list-checkbox my-ul">
+                          <li><label class="label-checkbox">
+                              <input type="checkbox" name="checkbox3">
+                              <span class="label-checkbox__custom"></span>
+                              <span class="label-checkbox__text">Лес</span>
+                            </label></li>
+                          <li><label class="label-checkbox">
+                              <input type="checkbox" name="checkbox3" checked>
+                              <span class="label-checkbox__custom"></span>
+                              <span class="label-checkbox__text">Арбеково</span>
+                            </label></li>
+                          <li><label class="label-checkbox">
+                              <input type="checkbox" name="checkbox3">
+                              <span class="label-checkbox__custom"></span>
+                              <span class="label-checkbox__text">Центр</span>
+                            </label></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -140,12 +466,119 @@
     </div>
   </div>
 
+  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+
+        <!-- <div class="modal-header">
+          <h2 class="modal-title">выбор квартиры</h2>
+        </div> -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-lg-7 order-lg-1">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-content1" role="tabpanel" aria-labelledby="1-tab">
+                  <div class="apartment-photo">
+                    <img src="img/apartment-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-content2" role="tabpanel" aria-labelledby="2-tab">
+                  <div class="apartment-photo">
+                    <img src="img/apartment-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-content3" role="tabpanel" aria-labelledby="3-tab">
+                  <div class="apartment-photo">
+                    <img src="img/apartment-img.jpg" alt="">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-content4" role="tabpanel" aria-labelledby="4-tab">
+                  <div class="apartment-photo">
+                    <img src="img/apartment-img.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#tab-content1"
+                    type="button" role="tab" aria-controls="tab-content1" aria-selected="true">Планировка</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-content2" type="button"
+                    role="tab" aria-controls="tab-content2" aria-selected="false">План этажа</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-content3" type="button"
+                    role="tab" aria-controls="tab-content3" aria-selected="false">Генплан</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#tab-content4" type="button"
+                    role="tab" aria-controls="tab-content4" aria-selected="false">Вид из окна</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <div class="apartment-information">
+                <a href="#" class="btn btn-white btn-catalog-apartment" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-prev"></use>
+                  </svg>
+                  <span>вернуться к каталогу планировок</span>
+                </a>
+
+                <h2 class="modal-title">1-комнатная квартира</h2>
+                <div class="subtitle">44,27 м<sup>2</sup> №362 в ЖК «GP NEXT»: Башня №1</div>
+
+                <ul class="list-tags-apartment my-ul">
+                  <li><a href="#" class="btn btn-sm btn-dark">цена снижена</a></li>
+                  <li><a href="#" class="btn btn-sm btn-dark">выгода до 11%</a></li>
+                  <li><a href="#" class="btn btn-sm btn-dark">с гардеробной</a></li>
+                </ul>
+
+                <ul class="list-charasteristics-apartment mb-40 my-ul">
+                  <li>
+                    <p>Площадь</p>
+                    <span>44,27 м<sup>2</sup></span>
+                  </li>
+                  <li>
+                    <p>Этаж</p>
+                    <span>3<span class="color-gray">из 12</span></span>
+                  </li>
+                  <li>
+                    <p>Срок сдачи</p>
+                    <span>I квартал 2023</span>
+                  </li>
+                </ul>
+
+                <div class="mb-40 apartment-price">
+                  <span>Стоимость от</span>
+                  <div class="price">4 000 111 ₽</div>
+                  <div class="price-credit">Ипотека от 7 891 ₽/мес</div>
+                </div>
+
+                <a href="#" class="btn btn-lg btn-accent btn-reserved">забронировать эту квартиру</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>
