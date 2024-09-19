@@ -40,9 +40,26 @@
 .modal-header {
   width: 100%;
   padding: 0;
-  margin: 0 0 28px;
+  margin: 0;
   border: none;
   border-radius: 0;
+}
+.modal-header__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 28px 0 0;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  border: 1px solid rgba(234, 213, 135, 0.3);
+  padding: 20px;
+}
+.modal-header__subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 8px 0 0;
 }
 
 .modal-body {
@@ -50,6 +67,7 @@
   width: 100%;
   border: none;
   border-radius: 0;
+  margin: 28px 0 0;
 }
 
 .modal-title {
@@ -307,4 +325,84 @@
 }
 .apartment-price span {
   font-size: 14px;
+}
+
+.modal-v2 .modal-dialog {
+  max-width: 908px;
+}
+.modal-v2 .modal-content {
+  background: #333439;
+  color: #fff;
+  padding: 64px;
+  z-index: 1;
+}
+.modal-v2 .modal-header {
+  justify-content: start;
+  align-items: flex-start;
+}
+.modal-v2 .btn-close {
+  border-color: #fff;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  padding: 3px;
+  fill: #fff;
+}
+.modal-v2 .modal-title {
+  text-transform: none;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1;
+  font-family: "Geologica", sans-serif;
+  padding: 0 32px 0 0;
+}
+
+.modal-text-overlay {
+  position: absolute;
+  z-index: -1;
+  bottom: -46px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 110px;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(234, 213, 135, 0.3);
+}
+
+.form-reserve input {
+  height: 54px;
+}
+.form-reserve input::-moz-placeholder {
+  color: rgba(51, 52, 57, 0.4);
+}
+.form-reserve input::placeholder {
+  color: rgba(51, 52, 57, 0.4);
+}
+.form-reserve [type=submit] {
+  width: 100%;
+}
+.form-reserve .label-checkbox {
+  padding: 10px 0;
+  border: none;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  lw: 300px;
+}
+.form-reserve .label-checkbox input {
+  display: none;
+}
+.form-reserve .label-checkbox input:checked ~ .label-checkbox__custom {
+  background: #fff;
+}
+.form-reserve .label-checkbox input:checked ~ .label-checkbox__text {
+  color: #fff;
+}
+.form-reserve .label-checkbox__custom {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  background: transparent;
+  border: 1px solid #fff;
 }

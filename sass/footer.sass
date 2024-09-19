@@ -36,15 +36,29 @@
 .modal-header
   width: 100%
   padding: 0
-  margin: 0 0 28px
+  margin: 0 
   border: none
   border-radius: 0
+  &__icon
+    @include d-flex
+    margin: 0 28px 0 0
+    width: 100px
+    height: 100px
+    min-width: 100px
+    border: 1px solid rgba(#EAD587, .3)
+    padding: 20px
+  &__subtitle
+    font-size: 14px
+    font-weight: 300
+    color: rgba(#fff, .5)
+    margin: 8px 0 0
 
 .modal-body
   padding: 0
   width: 100%
   border: none
   border-radius: 0
+  margin: 28px 0 0
 
 .modal-title
   text-transform: uppercase
@@ -193,7 +207,7 @@
     font-size: 20px
     margin: 4px 0 28px
     sup
-      font-size: 14px    
+      font-size: 14px
 
 .list-tags-apartment
   width: 100%
@@ -202,7 +216,7 @@
   flex-wrap: wrap
   margin: 0 0 20px
   li
-    margin: 0 8px 8px 0  
+    margin: 0 8px 8px 0
     &:last-child
       margin: 0 0 8px
 
@@ -227,7 +241,7 @@
     &:last-child
       margin: 0
     sup
-      font-size: 14px  
+      font-size: 14px
     span
       margin-left: auto
       position: relative
@@ -240,9 +254,6 @@
       z-index: 1
       background: $gray
 
-
-
-
 .apartment-price
   width: 100%
   font-size: 20px
@@ -253,5 +264,70 @@
   span, .price-credit
     color: rgba(#000, .4)
   span
-    font-size: 14px  
+    font-size: 14px
 
+.modal-v2
+  .modal-dialog
+    max-width: 908px
+  .modal-content
+    background: #333439
+    color: #fff
+    padding: 64px
+    z-index: 1
+  .modal-header
+    justify-content: start 
+    align-items: flex-start
+  .btn-close
+    border-color: #fff
+    width: 32px
+    height: 32px
+    min-width: 32px
+    padding: 3px
+    fill: #fff    
+  .modal-title
+    text-transform: none
+    font-size: 32px
+    font-weight: normal
+    line-height: 1
+    font-family: $default-font
+    padding: 0 32px 0 0
+
+.modal-text-overlay
+  position: absolute
+  z-index: -1
+  bottom: -46px
+  left: 50%
+  transform: translate(-50%,0)
+  font-size: 110px
+  color: transparent
+  text-transform: uppercase
+  -webkit-text-stroke-width: 1px
+  -webkit-text-stroke-color: rgba(#EAD587, .3)
+
+.form-reserve
+  input
+    height: 54px
+    &::placeholder
+      color: rgba(#333439, .4)
+  [type='submit']
+    width: 100%
+  .label-checkbox
+    padding: 10px 0
+    border: none
+    align-items: flex-start
+    color: rgba(#fff, .5)
+    font-size: 14px
+    lw: 300px
+    input
+      display: none  
+      &:checked
+        ~ .label-checkbox__custom
+            background: #fff
+        ~ .label-checkbox__text
+            color: #fff
+    &__custom
+      width: 18px
+      height: 18px
+      min-width: 18px
+      background: transparent
+      border: 1px solid #fff  

@@ -38,6 +38,8 @@
       <div class="row">
         <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#modal1">modal1</a>
         <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#modal2">modal2</a>
+        <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#modal3">modal3</a>
+        <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#modal4">modal4</a>
       </div>
     </div>
   </main>
@@ -537,6 +539,82 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-v2" id="modal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-header__icon"><img src="img/key.svg" alt=""></div>
+          <div class="modal-header__text">
+            <h2 class="modal-title">Форма <span class="color-yellow">бронирования</span> <br>
+              квартиры</h2>
+            <div class="modal-header__subtitle">
+              <p>Оставьте Ваши данные и наш менеджер <br>
+                свяжется с Вами в ближайшее время</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-reserve">
+            <div class="row">
+              <div class="col-12 col-lg-6 mb-16">
+                <label>
+                  <input type="text" placeholder="Имя" name="name">
+                </label>
+              </div>
+              <div class="col-12 col-lg-6 mb-16">
+                <label>
+                  <input type="text" placeholder="Имя" name="name">
+                </label>
+              </div>
+              <div class="col-12 col-lg-7 col-xl-8 mb-16">
+                <label class="label-checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="label-checkbox__custom"></span>
+                  <span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки персональных данных</span>
+                </label>
+              </div>
+              <div class="col-12 col-lg-5 col-xl-4">
+                <button type="submit" class="btn btn-lg btn-accent">забронировать</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-text-overlay">бронирование</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-v2" id="modal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-header__icon"><img src="img/documents.svg" alt=""></div>
+          <div class="modal-header__text">
+            <h2 class="modal-title"><span class="color-yellow">Спасибо,</span> <br>
+              Ваша заявка отправлена</h2>
+            <div class="modal-header__subtitle">
+              <p>Менеджер отдела продаж свяжется <br>
+                с Вами в ближайшее время</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-text-overlay">бронирование</div>
       </div>
     </div>
   </div>

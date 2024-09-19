@@ -1,2 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "SovMod";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SovMod/SovMod.eot");
+  src: url("../fonts/SovMod/SovMod.eot?#iefix") format("embedded-opentype"), url("../fonts/SovMod/SovMod.woff") format("woff"), url("../fonts/SovMod/SovMod.ttf") format("truetype");
+}
